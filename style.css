@@ -102,3 +102,83 @@ a:hover {
 
 
 
+/* Tablet menu */
+
+@media (min-width: 468px) {
+    .menu {
+        justify-content: center;
+    }
+
+    .logo {
+        flex: 1;
+    }
+
+    .item.button {
+        width: auto;
+        order: 1;
+        display: block;
+    }
+
+    .toggle {
+        order: 2;
+    }
+
+    .button.secondary {
+        border: none;
+    }
+
+    .button a {
+        text-decoration: none;
+        padding: 7px 15px;
+        background-color: teal;
+        border: 2px solid teal;
+        border-radius: 50px;
+    }
+
+    .button.secondary a {
+        background: transparent;
+    }
+
+    .button a:hover {
+        transition: all 250ms ease-in-out;
+    }
+
+    .button:not(.secondary) a:hover {
+        background-color: rgb(13, 153, 153);
+        border-color: rgb(13, 153, 153);
+    }
+
+    .button.secondary a:hover {
+        color: #ddd;
+    }
+}
+
+@media (min-width: 768px) {
+    .item {
+        display: block;
+        width: auto;
+        order: 1;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    .logo {
+        order: 0;
+    }
+
+    .button {
+        order: 2;
+    }
+
+    .menu li {
+        padding: 15px 10px;
+    }
+
+    .menu li.button {
+        padding-right: 0;
+    }
+
+    
+}
